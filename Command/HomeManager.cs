@@ -6,7 +6,7 @@ namespace Command
     //Invoker class
     public class HomeManager
     {
-        private List<IHomeManagementCommand> _commands = new List<IHomeManagementCommand>();
+        private List<IHomeManagementCommand> _commands = new();
 
         public void AddCommand(IHomeManagementCommand command) => _commands.Insert(0, command);
 
